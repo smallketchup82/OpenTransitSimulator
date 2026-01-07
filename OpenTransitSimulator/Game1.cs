@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace TransitSimulator;
+namespace OpenTransitSimulator;
 
 public class Game1 : Game
 {
@@ -43,7 +43,7 @@ public class Game1 : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.White);
+        GraphicsDevice.Clear(Color.Gray);
 
         // TODO: Add your drawing code here
 
