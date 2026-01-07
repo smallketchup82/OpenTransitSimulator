@@ -106,4 +106,4 @@ All of the stuff I listed above are genuine problems I've had to deal with while
 I don't want to stop at just that though, I also want to explore cost optimization and environmental impact. I want to allow the AI to optimize for different goals, whether it's minimizing costs, reducing emissions, or maximizing passenger satisfaction. I want to create the most advanced public transit simulator out there, and I want to do it in a way where anyone can create different scenarios and evaluate their efficacy.
 
 ## License
-This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for more details.
+This project is licensed under the [GNU Lesser General Public License v3.0](COPYING.LESSER). In general, if you want to copy the codebase, make your own tweaks for your own personal usage while keeping your modified version closed source, that's completely fine! But if you plan on redistributing your modified version, we want your version to be open source. Feel free to contact me at ketchup@smkt.ca for any questions or concerns.
