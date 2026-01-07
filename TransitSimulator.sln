@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransitSimulator", "TransitSimulator\TransitSimulator.csproj", "{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransitSimulator", "OpenTransitSimulator\OpenTransitSimulator.csproj", "{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
