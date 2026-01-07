@@ -61,12 +61,12 @@ This lists the main features planned for the project:
         - [ ] On-time performance
         - [ ] Operational costs
 
-Many more features are planned but not listed here. All planned features can be found [here]().
+Many more features are planned but not listed here. All planned features can be found [here](https://github.com/smallketchup82/TransitSimulator/issues?q=is%3Aissue%20state%3Aopen%20label%3Atype%3Afeature).
 
 ## Development
 This project is currently in the (very) early stages of development. As a result, we do not have release builds or binaries available yet. If you're interested in seeing where we're at right now, or want to contribute to the project, feel free to check out the repository and build it from source via the instructions in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Right now, we use the Godot game engine for development. However, this may change as the project is still in its early stages. If you're interested in being a frequent contributor, shoot me an email at ketchup@smkt.ca and I'll be happy to drop you my Discord info so we can discuss the project further!
+Right now, we use the Monogame engine for development. If you're interested in being a frequent contributor, shoot me an email at ketchup@smkt.ca and I'll be happy to drop you my Discord info so we can discuss the project further. I would very much appreciate any help I can get.
 
 ## Purpose
 The primary purpose of this project is to serve as a proof of concept, to show that AI and algorithms can enhance many of the problems faced in public transit systems today.
