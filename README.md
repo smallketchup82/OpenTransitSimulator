@@ -1,5 +1,5 @@
 # Open Transit Simulator
-Transit Simulator is my take on a public transit simulator. It is meant to be a near-realistic simulation of transportation systems. Utilizing a complex AI that constantly optimizes itself on the fly, processing a dozen different metrics in real-time to provide the best-case micro-management of an entire transit line, this simulator hopes to allow users to evaluate the efficiency of different configurations, routes, and transportation methods across multiple lines spanning an entire network.
+Open Transit Simulator is my take on a public transit simulator. It is meant to be a near-realistic simulation of transportation systems. Utilizing a complex AI that constantly optimizes itself on the fly, processing a dozen different metrics in real-time to provide the best-case micro-management of an entire transit line, this simulator hopes to allow users to evaluate the efficiency of different configurations, routes, and transportation methods across multiple lines spanning an entire network.
 
 _If AI can do it better, so can we._
 
