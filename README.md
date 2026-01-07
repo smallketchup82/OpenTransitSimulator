@@ -70,6 +70,16 @@ This project is currently in the (very) early stages of development. As a result
 
 Right now, we use the Monogame engine for development. If you're interested in being a frequent contributor, shoot me an email at ketchup@smkt.ca and I'll be happy to drop you my Discord info so we can discuss the project further. I would very much appreciate any help I can get.
 
+### Roadmap
+The following are my estimated durations for how long it will take to implement certain features, and the overall timeline of when certain features are expected to be integrated.
+
+| Milestone                        | Description                                                                                                                                                                                                                                                                                                                                                             | Duration | ETA (Sum of Duration) |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|-----------------------|
+| Game Engine Completion           | Addressing everything in https://github.com/smallketchup82/TransitSimulator/issues/12                                                                                                                                                                                                                                                                                   | 4 months | 4 months              |
+| Simulation Foundation Completion | Adding in the pieces for the simulation.<br>Roughly translates to: adding locomotives, cars, rails, stations, switches, blocks & signals                                                                                                                                                                                                                                 | 2 months | 6 months              |
+| Simulation Feature Completion    | Adding in the final pieces and making everything work. Roughly translates to:<br><br>- Making locomotives follow rails, and switching rails at switches<br>- Making carriages/cars follow locomotives<br>- Adding in physics engine (incl. collision detection)<br>- Adding in the AI (incl. pathfinding)<br>- Adding in rail yards<br>- Adding in passenger simulation | 4 months | 10 months             |
+| User Interface Completion        | Adding in a user interface, statistics, labels & details when hovering over trains, etc.                                                                                                                                                                                                                                                                                | 2 months | 12 months             |
+
 ## Purpose
 The primary purpose of this project is to serve as a proof of concept, to show that AI and algorithms can enhance many of the problems faced in public transit systems today.
 
@@ -89,7 +99,7 @@ In a nutshell, I want to make an AI that can micromanage a transit system better
 - You can have dynamic scheduling that adjusts in real-time based on various factors. Your busses shouldn't be coming and leaving 10 minutes before trains arrive at your station
 - You don't need to have your busses scheduled 60 minutes apart in the suburbs. Infrequent service is genuinely a thing of the past.
 - You don't even need to design routes in general. Let the AI use its algorithms to design the most efficient routes based on demand, operational costs/constraints, and other factors.
-- You can turn the TTC streetcars into a genuinely good transit option instead of a slow, overcrowded mess, by optimizing their routes, schedules, capacities, stop placements, signal priorities, and more.
+- You can turn the TTC streetcars into a genuinely good transit option instead of a slow, overcrowded mess, by mathimatically optimizing their routes, schedules, capacities, stop placements, signal priorities, and more.
 
 All of the stuff I listed above are genuine problems I've had to deal with while using public transit for years. I want to take things into my own hands to see if AI can do a better job at designing and managing transit systems than humans can. I want to allow other people to experiment with different designs and strategies for public transit systems, and see how they perform in a simulated environment. Want to see if a bus rapid transit system can outperform a light rail system in a given scenario? Want to see how different scheduling strategies affect passenger wait times and overall system efficiency? Want to see if bus lanes actually work? I hope to provide the answers with this project.
 
