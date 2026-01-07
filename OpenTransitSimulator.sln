@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransitSimulator", "OpenTransitSimulator\OpenTransitSimulator.csproj", "{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransitSimulator.Tests", "OpenTransitSimulator.Tests\OpenTransitSimulator.Tests.csproj", "{AC65A334-06ED-4440-AD7D-FD01D5F31D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransitEngine", "OpenTransitEngine\OpenTransitEngine.csproj", "{856D9285-9E53-4AE5-AFA9-020CC3AE5355}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC65A334-06ED-4440-AD7D-FD01D5F31D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC65A334-06ED-4440-AD7D-FD01D5F31D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC65A334-06ED-4440-AD7D-FD01D5F31D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC65A334-06ED-4440-AD7D-FD01D5F31D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{856D9285-9E53-4AE5-AFA9-020CC3AE5355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856D9285-9E53-4AE5-AFA9-020CC3AE5355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856D9285-9E53-4AE5-AFA9-020CC3AE5355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856D9285-9E53-4AE5-AFA9-020CC3AE5355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

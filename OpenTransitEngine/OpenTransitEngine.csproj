@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Bindables\" />
+      <Folder Include="Configuration\" />
+      <Folder Include="Graphics\Animation\" />
+      <Folder Include="Graphics\Containers\" />
+      <Folder Include="Graphics\Lines\" />
+      <Folder Include="Graphics\Rendering\" />
+      <Folder Include="Graphics\Shapes\" />
+      <Folder Include="Graphics\Transforms\" />
+      <Folder Include="Graphics\UserInterface\" />
+      <Folder Include="Input\" />
+      <Folder Include="IO\" />
+      <Folder Include="Logging\" />
+      <Folder Include="Physics\" />
+      <Folder Include="Screens\" />
+      <Folder Include="Statistics\" />
+      <Folder Include="Text\" />
+      <Folder Include="Threading\" />
+      <Folder Include="Timing\" />
+    </ItemGroup>
+
+</Project>
