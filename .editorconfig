@@ -1,0 +1,7 @@
+[*.cs]
+end_of_line = crlf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+file_header_template = Copyright (C) 2026 smallketchup82 <ketchup@smkt.ca>.\nThis file is part of OpenTransitSimulator and licensed under the LGPL-3.0-or-later license.\n\nOpenTransitSimulator is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser\nGeneral Public License as published by the Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nOpenTransitSimulator is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the\nimplied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public\nLicense for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with OpenTransitSimulator.\nIf not, see <https://www.gnu.org/licenses/>.
