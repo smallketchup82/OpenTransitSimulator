@@ -1,7 +1,7 @@
 # Purpose
 
 ## Why did I make this?
-I came up with the idea for this project while riding the GO Train in Toronto. As a frequent user of public transit who hasn't obtained a driver’s license yet—and isn't keen on paying for car insurance—I depend on these systems to get around. More often than not, I find myself frustrated with the current state of public transit. Whether it's delays, overcrowding, or inefficient routes, there are many areas fit for improvement. I started thinking: what if we equipped every single transit vehicle with a tracker, used real-time data to monitor their status, passenger loads, and projected demand, and then used AI to optimize the entire system dynamically?
+I came up with the idea for this project while riding the GO Train in Toronto. As a frequent user of public transit who hasn't obtained a driver’s license yet—and isn't keen on paying for car insurance—I depend on these systems to get around. More often than not, I find myself frustrated with the current state of public transit. Whether it's delays, overcrowding, or inefficient routes, there are many areas fit for improvement. I started thinking: what if we equipped every single transit vehicle with a tracker, used real-time data to monitor their status, passenger loads, and projected demand, and then used AI (math) to optimize the entire system dynamically?
 
 ## What do we hope to achieve?
 The overarching goal of the project is to prove that "If AI can do it better, so can we."
