@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransitSimulator", "OpenTransitSimulator\OpenTransitSimulator.csproj", "{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransit.Simulator", "OpenTransit.Simulator\OpenTransit.Simulator.csproj", "{C21E75FB-2292-45B2-A1F4-3CB2348AFE9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransitSimulator.Tests", "OpenTransitSimulator.Tests\OpenTransitSimulator.Tests.csproj", "{AC65A334-06ED-4440-AD7D-FD01D5F31D27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransit.Tests", "OpenTransit.Tests\OpenTransit.Tests.csproj", "{AC65A334-06ED-4440-AD7D-FD01D5F31D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransitEngine", "OpenTransitEngine\OpenTransitEngine.csproj", "{856D9285-9E53-4AE5-AFA9-020CC3AE5355}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTransit.Engine", "OpenTransit.Engine\OpenTransit.Engine.csproj", "{856D9285-9E53-4AE5-AFA9-020CC3AE5355}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

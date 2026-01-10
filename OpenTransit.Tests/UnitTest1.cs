@@ -1,4 +1,4 @@
-﻿namespace OpenTransitSimulator.Tests;
+﻿namespace OpenTransit.Tests;
 
 public class Tests
 {

@@ -10,10 +10,8 @@
       <Folder Include="Bindables\" />
       <Folder Include="Configuration\" />
       <Folder Include="Graphics\Animation\" />
-      <Folder Include="Graphics\Containers\" />
       <Folder Include="Graphics\Lines\" />
       <Folder Include="Graphics\Rendering\" />
-      <Folder Include="Graphics\Shapes\" />
       <Folder Include="Graphics\Transforms\" />
       <Folder Include="Graphics\UserInterface\" />
       <Folder Include="Input\" />
@@ -25,6 +23,17 @@
       <Folder Include="Text\" />
       <Folder Include="Threading\" />
       <Folder Include="Timing\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="MonoGame.Framework">
+        <HintPath>..\..\..\.nuget\packages\monogame.framework.desktopgl\3.8.4.1\lib\net8.0\MonoGame.Framework.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.4.1" />
+      <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4.1" />
     </ItemGroup>
 
 </Project>

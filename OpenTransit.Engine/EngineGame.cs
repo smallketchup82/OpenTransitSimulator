@@ -15,15 +15,24 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using OpenTransit.Engine.Graphics;
+using OpenTransit.Engine.Graphics.Containers;
+using OpenTransit.Engine.Graphics.Shapes;
 
-namespace OpenTransitSimulator;
+namespace OpenTransit.Engine;
 
-public class Game1 : Game
+/// <summary>
+/// The low level game class for OpenTransit.Engine.
+/// Does not contain any drawable logic. Should be inherited by higher level game classes.
+/// </summary>
+public abstract class EngineGame : Game
 {
     private GraphicsDeviceManager _graphics;
-    private SpriteBatch _spriteBatch;
+    private SpriteBatch _spriteBatch = null!;
 
-    public Game1()
+    protected readonly Container Root = new();
+
+    protected EngineGame()
     {
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
@@ -32,7 +41,12 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        // TODO: Add your initialization logic here
+        Window.AllowUserResizing = true;
+        Window.Title = "OpenTransit Engine";
+        _graphics.PreferredBackBufferWidth = 1280;
+        _graphics.PreferredBackBufferHeight = 720;
+        _graphics.SynchronizeWithVerticalRetrace = true;
+        _graphics.ApplyChanges();
 
         base.Initialize();
     }
@@ -42,6 +56,26 @@ public class Game1 : Game
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
         // TODO: use this.Content to load your game content here
+
+        Root.Children =
+        [
+            new Box
+            {
+                RelativePositionAxes =  Axes.Both,
+                RelativeSizeAxes = Axes.Both,
+                DrawColor =  Color.White,
+                Size =  new Vector2(1f, 0.5f),
+                Position =  new Vector2(0f, 0f)
+            },
+            new Box
+            {
+                RelativeSizeAxes = Axes.Both,
+                DrawColor =  Color.Red,
+                Size =  new Vector2(1f, 0.5f),
+                RelativePositionAxes =  Axes.Both,
+                Position =  new Vector2(0f, 0.5f)
+            }
+        ];
     }
 
     protected override void Update(GameTime gameTime)
@@ -50,7 +84,8 @@ public class Game1 : Game
             Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
-        // TODO: Add your update logic here
+        Root.Size = new Vector2(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
+        Root.Update(gameTime);
 
         base.Update(gameTime);
     }
@@ -59,7 +94,13 @@ public class Game1 : Game
     {
         GraphicsDevice.Clear(Color.Gray);
 
-        // TODO: Add your drawing code here
+        _spriteBatch.Begin();
+
+        // Drawing the root container will recursively draw all its children
+        // We love polymorphism
+        Root.Draw(_spriteBatch);
+
+        _spriteBatch.End();
 
         base.Draw(gameTime);
     }
