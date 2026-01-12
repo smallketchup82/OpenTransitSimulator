@@ -82,4 +82,10 @@ The following are my estimated durations for how long it will take to implement 
 | User Interface Completion        | Adding in a user interface, statistics, labels & details when hovering over trains, etc.                                                                                                                                                                                                                                                                                | 2 months | 12 months             |
 
 ## License
-This project is licensed under the [GNU Lesser General Public License v3.0](COPYING.LESSER). In general, if you want to copy the codebase, making your own tweaks for your own personal use, while keeping your modified version closed source, that's completely fine! But if you plan on redistributing your modified version, we want your version to be open source. Feel free to contact me at ketchup@smkt.ca for any questions or concerns.
+This project is licensed under the [GNU Lesser General Public License v3.0](COPYING.LESSER).
+TL;DR: If you want to copy the codebase, making your own tweaks for your own personal use, while keeping your modified version closed source, that's completely fine! But if you plan on redistributing your modified version, we want your version to be open source. Feel free to contact me at ketchup@smkt.ca for any questions or concerns.
+
+## Credits
+- Engine structure is inspired by [osu-framework](https://github.com/ppy/osu-framework)
+- Engine is built upon [MonoGame](https://monogame.net)
+- Simulator visuals are inspired by [Mini Metro](https://en.wikipedia.org/wiki/Mini_Metro_(video_game))
