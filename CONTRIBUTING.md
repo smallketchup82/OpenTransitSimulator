@@ -19,8 +19,8 @@ As the project is in the early stages of development, any feedback is highly app
 
 When providing feedback, please mind the following:
 - As with issues, please search existing discussions to see if your feedback has already been shared.
-- Be respectful and constructive in your feedback. Remember that there are real people behind the project who are putting in time and effort to make it happen. Make sure your feedback is focused on what needs to be improved, instead of simply stating that something is bad.
-- Any examples, mockups, designs, or references can be very helpful in conveying your ideas and suggestions.
+- Be respectful and constructive in your feedback. Remember that there are real people behind the project who are putting in time and effort to make it happen. Make sure your feedback is constructive, and doesn't just criticize a feature or design without offering suggestions for improvement.
+- Examples, mockups, designs, or references can be very helpful in conveying your ideas and suggestions.
 - Try to keep feedback realistic and actionable. While we appreciate ambitious ideas, it's important to consider the feasibility and impact of your suggestions. No matter how good an idea sounds, if it requires weeks of work to implement, it will certainly not be prioritized in the near future.
     - If we don't act on or respond to your feedback right away, please don't take it personally. We may need time to evaluate and prioritize it. There's also the chance that it may not align with our current goals.
 
@@ -31,7 +31,7 @@ You can provide feedback through GitHub Discussions. We will always try to respo
 ### Prerequisites
 You'll need the following tools installed on your machine to start:
 - An IDE made for C# development
-  - We recommend using [JetBrains Rider](https://www.jetbrains.com/rider/) as it comes with run configruations for the project. However, any IDE made for .NET development, with editorconfig support, should work fine.
+  - We recommend using [JetBrains Rider](https://www.jetbrains.com/rider/) as it comes with run configurations for the project. However, any IDE made for .NET development, with editorconfig support, should work fine.
   - [Visual Studio](https://visualstudio.microsoft.com/), or [VSCode](https://code.visualstudio.com/) with the [C#](https://code.visualstudio.com/docs/languages/csharp) and [editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) extensions are good alternatives.
 - [.NET SDK 10.0 or later](https://dotnet.microsoft.com/en-us/download)
 - [Git](https://git-scm.com/)
@@ -76,7 +76,7 @@ Hopefully, the project should build and run without any issues. If you encounter
 - Develop your features in the `Debug` configuration unless you are specifically working on performance optimizations or release-specific changes. The `Debug` configuration provides better debugging, logging, and error reporting which is essential during development.
 - Document your code where necessary. Use XML documentation comments for public methods, classes, and properties to explain their purpose and usage. Use inline comments sparingly to clarify complex logic. Avoid adding obvious comments that do not add value, such as comments for straightforward private methods.
 - Don't continually update your branch with the `main` branch. Rebase your branch onto `main` before opening a pull request, and only update it if there are merge conflicts or significant changes in `main` that affect your work. We will handle merging `main` into your branch during the review process if necessary.
-- While we appreciate all contributions, please be aware that not all pull requests will be accepted, and not all pull requests will be merged smoothly. We may give you critical feedback, request significant changes, or even toss out your approach entirely. Please don't take this personally; we never try to equate code to contributors. Our goal is to ensure that each change aligns with the project's goals, maintains code quality, and fits well within the existing architecture, all while being maintainable in the long term. Take any feedback, critique, or rejection as a learning opportunity. 
+- While we appreciate all contributions, please be aware that not all pull requests will be accepted, and not all pull requests will be merged smoothly. We may give you critical feedback, request significant changes, or even toss out your approach entirely. Please don't take this personally; we never try to equate code with contributors. Our goal is to ensure that each change aligns with the project's goals, maintains code quality, and fits well within the existing architecture, all while being maintainable in the long term. Take any feedback, critique, or rejection as a learning opportunity. 
 - It goes without saying, but ensure your pull request's body has a detailed explanation of your changes. If in doubt, use the following as a checklist:
   - Are there any pre-requisites for these changes? (list any additional pull requests that need to be merged first)
   - What problem does this PR solve?
