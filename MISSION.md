@@ -3,16 +3,16 @@
 > When we refer to "AI" in this project, we do NOT mean machine learning or LLM's. The AI in this project is entirely chained logic & math.
 
 ## Why did I make this?
-I came up with the idea for this project while riding the GO Train in Toronto. As a frequent user of public transit who hasn't obtained a driver’s license yet—and isn't keen on paying for car insurance—I depend on these systems to get around. More often than not, I find myself frustrated with the current state of public transit. Whether it's delays, overcrowding, or inefficient routes, there are many areas fit for improvement. I started thinking: what if we equipped every single transit vehicle with a tracker, used real-time data to monitor their status, passenger loads, and projected demand, and then used AI to optimize the entire system dynamically?
+I came up with the idea for this project while riding the GO Train in Toronto. As a frequent user of public transit who hasn't obtained a driver’s license yet--and isn't keen on paying for car insurance--I depend on these systems to get around. More often than not, I find myself frustrated with the current state of public transit. Whether it's delays, overcrowding, or inefficient routes, there are many areas fit for improvement. I started thinking: what if we equipped every single transit vehicle with a tracker, used real-time data to monitor their status, passenger loads, and projected demand, and then used AI to optimize the entire system dynamically?
 
 ## What do we hope to achieve?
-The overarching goal of the project is to "show, not tell". This refers to our goal of showing transit authorities what we want, rather than trying to explain what we want. The latter of which typically falls on deaf ears. Meanwhile, our technical goal for this project is to show that "If AI can do it better, so can we." Therefore, this project aims to prove both. The former to the public, and the latter to ourselves.
+The mission is to "show, not tell." This refers to our goal of *showing* transit authorities what we want, rather than *explaining* what we want--an approach that typically falls on deaf ears. Meanwhile, our technical goal for this project is to show that "If AI can do it better, so can we." Therefore, this project aims to prove both: the former to the public, and the latter to ourselves.
 
 ### As a proof of concept
 The primary goal is to serve as a proof of concept, demonstrating that AI and algorithms can solve many of the logistical problems faced by public transit systems today. The hypothesis is that if we can create an AI capable of managing a transit network more efficiently than current standards, we can apply that knowledge to the real world. We can use insights from this simulation to inform the design of actual transit systems, making them more responsive and user-friendly. We want to show executives, planners, and politicians that with the right tools, public transit can be significantly improved without necessarily increasing costs or infrastructure.
 
 ### As a statement
-Secondly, this project serves as a statement that many public transit issues are caused by self-imposed constraints—such as prioritizing cars, budget limitations, or political negligence—rather than genuine technical or logistical barriers.
+Secondly, this project serves as a statement that many public transit issues are caused by self-imposed constraints--such as prioritizing cars, budget limitations, or political negligence--rather than genuine technical or logistical barriers.
 
 Most of my friends drive instead of using public transit. When I ask them why, they often cite reasons like:
 - "I like the freedom of driving."
@@ -41,7 +41,7 @@ Furthermore, many city builders, like *Cities: Skylines 2*, are commercial produ
 By creating a free and open-source project, we democratize access. Transit planners, researchers, and enthusiasts can experiment with designs without licensing fees or restrictions, hopefully fostering innovation in the field.
 
 ## Conclusion
-We are building a transit simulator that entertains, educates, and inspires. By leveraging AI and advanced simulation techniques, we hope to demonstrate that public transit *can* be excellent, and encourage new thinking in transit planning. We want to send a message to authorities that investing in public transit is not just a social responsibility, but a smart economic decision that yields returns in efficiency, sustainability, and quality of life—even in the suburbs.
+We are building a transit simulator that entertains, educates, and inspires. By leveraging AI and advanced simulation techniques, we hope to demonstrate that public transit *can* be excellent, and encourage new thinking in transit planning. We want to send a message to authorities that investing in public transit is not just a social responsibility, but a smart economic decision that yields returns in efficiency, sustainability, and quality of life--even in the suburbs.
 
 Cities like Tokyo, Seoul, and various European capitals have shown that with the right planning and political will, public transit works. We want to prove *why* they're good mathetically, and we want to provide the tools to optimize these systems further.
 
