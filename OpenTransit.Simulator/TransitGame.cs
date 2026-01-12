@@ -12,7 +12,9 @@
 // You should have received a copy of the GNU Lesser General Public License along with OpenTransitSimulator.
 // If not, see <https://www.gnu.org/licenses/>.
 
+using Microsoft.Xna.Framework;
 using OpenTransit.Engine;
+using OpenTransit.Simulator.Trains;
 
 namespace OpenTransit.Simulator;
 
@@ -21,5 +23,43 @@ namespace OpenTransit.Simulator;
 /// </summary>
 public class TransitGame : EngineGame
 {
+    public TransitGame()
+    {
+        Window.Title = "Open Transit Simulator";
 
+    }
+
+    protected override void LoadContent()
+    {
+        base.LoadContent();
+
+        // Root.AddChild(new Locomotive
+        // {
+        //     Name = "GO Train",
+        //     Model = "basic_locomotive",
+        //     Mass = 135000,
+        //     TotalMass = 525000,
+        //     Horsepower = 5400,
+        //     MaxSpeed = 160,
+        //     TransmissionEfficiency = 0.85,
+        //     DrawColor = Color.Green
+        // });
+
+        Root.AddChild(new Locomotive
+        {
+            Name = "Shinkansen",
+            Model = "basic_locomotive",
+            Mass = 630000,
+            TotalMass = 715000,
+            Horsepower = 22900,
+            TransmissionEfficiency = 0.96,
+            Position = new Vector2(0, 100),
+            DrawColor = Color.Gray,
+            TestSpeed = 300,
+            MaxSpeed = 270,
+            DragConstantA = 7150.0,
+            DragConstantB = 100.0,
+            DragConstantC = 22.0
+        });
+    }
 }

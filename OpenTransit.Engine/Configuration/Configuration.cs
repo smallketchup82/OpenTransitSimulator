@@ -12,30 +12,9 @@
 // You should have received a copy of the GNU Lesser General Public License along with OpenTransitSimulator.
 // If not, see <https://www.gnu.org/licenses/>.
 
-namespace OpenTransit.Engine.Graphics.Containers;
+namespace OpenTransit.Engine.Configuration;
 
-public class Container : Container<Drawable>;
-
-/// <summary>
-/// A drawable that can contain other drawables.
-/// Transformations applied to this drawable will also affect its children.
-/// </summary>
-public class Container<T> : CompositeDrawable where T : Drawable
+public sealed class Configuration
 {
-    public IReadOnlyList<Drawable> Children
-    {
-        get => InternalChildren;
-        set
-        {
-            ClearInternal();
-            foreach (Drawable drawable in value)
-                AddInternal(drawable);
-        }
-    }
-
-    public void AddChild(Drawable child) => AddInternal(child);
-
-    public void RemoveChild(Drawable child) => RemoveInternal(child);
-
-    public void ClearChildren() => ClearInternal();
+    public const double PixelsPerMeter = 0.25;
 }

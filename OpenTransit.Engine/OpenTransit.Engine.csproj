@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Bindables\" />
-      <Folder Include="Configuration\" />
       <Folder Include="Graphics\Animation\" />
       <Folder Include="Graphics\Lines\" />
       <Folder Include="Graphics\Rendering\" />

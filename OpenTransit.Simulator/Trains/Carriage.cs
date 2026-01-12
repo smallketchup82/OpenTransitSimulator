@@ -12,30 +12,37 @@
 // You should have received a copy of the GNU Lesser General Public License along with OpenTransitSimulator.
 // If not, see <https://www.gnu.org/licenses/>.
 
-namespace OpenTransit.Engine.Graphics.Containers;
+using System;
+using Microsoft.Xna.Framework;
+using OpenTransit.Engine.Graphics;
 
-public class Container : Container<Drawable>;
+namespace OpenTransit.Simulator.Trains;
 
-/// <summary>
-/// A drawable that can contain other drawables.
-/// Transformations applied to this drawable will also affect its children.
-/// </summary>
-public class Container<T> : CompositeDrawable where T : Drawable
+public class Carriage : Drawable
 {
-    public IReadOnlyList<Drawable> Children
+    public required int MaxPassengers
     {
-        get => InternalChildren;
-        set
+        get;
+        init
         {
-            ClearInternal();
-            foreach (Drawable drawable in value)
-                AddInternal(drawable);
+            if (value <= 0)
+                throw new ArgumentOutOfRangeException(nameof(value), "MaxPassengers must be greater than zero.");
+
+            field = value;
         }
     }
 
-    public void AddChild(Drawable child) => AddInternal(child);
+    public int CurrentPassengers { get; private set; } = 0;
 
-    public void RemoveChild(Drawable child) => RemoveInternal(child);
+    public override void Update(GameTime gameTime)
+    {
+        base.Update(gameTime);
+    }
 
-    public void ClearChildren() => ClearInternal();
+    /// <summary>
+    /// Updates the position of the carriage based on the locomotive and other carriages.
+    /// </summary>
+    private void UpdatePosition()
+    {
+    }
 }

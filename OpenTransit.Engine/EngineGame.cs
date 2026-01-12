@@ -15,6 +15,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using OpenTransit.Engine.Dependencies;
 using OpenTransit.Engine.Graphics;
 using OpenTransit.Engine.Graphics.Containers;
 using OpenTransit.Engine.Graphics.Shapes;
@@ -31,6 +32,7 @@ public abstract class EngineGame : Game
     private SpriteBatch _spriteBatch = null!;
 
     protected readonly Container Root = new();
+    protected readonly DependencyContainer Dependencies = new();
 
     protected EngineGame()
     {
@@ -43,9 +45,8 @@ public abstract class EngineGame : Game
     {
         Window.AllowUserResizing = true;
         Window.Title = "OpenTransit Engine";
-        _graphics.PreferredBackBufferWidth = 1280;
-        _graphics.PreferredBackBufferHeight = 720;
-        _graphics.SynchronizeWithVerticalRetrace = true;
+        _graphics.PreferredBackBufferWidth = 1920;
+        _graphics.PreferredBackBufferHeight = 1080;
         _graphics.ApplyChanges();
 
         base.Initialize();
@@ -55,27 +56,12 @@ public abstract class EngineGame : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-        // TODO: use this.Content to load your game content here
+        Dependencies.Cache(GraphicsDevice);
+        Dependencies.Cache(Content);
+        Dependencies.Cache(_spriteBatch);
+        Dependencies.Cache(this);
 
-        Root.Children =
-        [
-            new Box
-            {
-                RelativePositionAxes =  Axes.Both,
-                RelativeSizeAxes = Axes.Both,
-                DrawColor =  Color.White,
-                Size =  new Vector2(1f, 0.5f),
-                Position =  new Vector2(0f, 0f)
-            },
-            new Box
-            {
-                RelativeSizeAxes = Axes.Both,
-                DrawColor =  Color.Red,
-                Size =  new Vector2(1f, 0.5f),
-                RelativePositionAxes =  Axes.Both,
-                Position =  new Vector2(0f, 0.5f)
-            }
-        ];
+        Root.Load(Dependencies);
     }
 
     protected override void Update(GameTime gameTime)
@@ -92,7 +78,7 @@ public abstract class EngineGame : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.Gray);
+        GraphicsDevice.Clear(Color.White);
 
         _spriteBatch.Begin();
 

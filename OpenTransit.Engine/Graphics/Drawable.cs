@@ -16,6 +16,7 @@ using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using OpenTransit.Engine.Dependencies;
 using OpenTransit.Engine.Graphics.Containers;
 
 namespace OpenTransit.Engine.Graphics;
@@ -23,6 +24,9 @@ namespace OpenTransit.Engine.Graphics;
 public class Drawable : IDisposable
 {
     public CompositeDrawable? Parent { get; set; }
+
+    public DependencyContainer Dependencies { get; private set; } = new();
+    public bool IsLoaded { get; private set; }
 
     public Vector2 Position { get; set; }
     public Vector2 Size { get; set; }
@@ -56,13 +60,59 @@ public class Drawable : IDisposable
     protected Vector2 DrawPosition { get; private set; }
     protected Vector2 DrawSize { get; private set; }
 
+    public virtual void Load(DependencyContainer dependencies)
+    {
+        if (IsLoaded) return;
+
+        Dependencies = DependencyInjector.RegisterCached(this, dependencies);
+        DependencyInjector.Inject(this, Dependencies);
+
+        IsLoaded = true;
+        Initialize();
+    }
+
+    /// <summary>
+    /// Called when the drawable is first added to the scene graph.
+    /// </summary>
+    /// <remarks>
+    /// The constructor is run when the object is created, but Initialize is run when the drawable is added to the scene.
+    /// Making this a good place to do any setup that requires the drawable to be part of the scene graph (e.g. accessing Parent).
+    /// </remarks>
+    public virtual void Initialize()
+    {
+    }
+
+    /// <summary>
+    /// The main update method for this drawable. Logic here is run on the main thread, synced to the frame rate.
+    /// Ensure you call <code>base.Update(gameTime);</code> at the start of your overridden method to ensure layout & updates occur.
+    /// </summary>
+    /// <param name="gameTime">The time elapsed from the last frame</param>
     public virtual void Update(GameTime gameTime)
     {
         UpdateLayout();
+
+        // TODO: Schedule PhysicsUpdate to run on physics thread
+        // For now, we'll just call it directly (not thread-safe)
+        PhysicsUpdate(gameTime);
     }
 
+    /// <summary>
+    /// The draw method for this drawable. Put any rendering, transformations, effects, etc. here.
+    /// </summary>
+    /// <param name="spriteBatch"></param>
     public virtual void Draw(SpriteBatch spriteBatch)
     {
+    }
+
+    /// <summary>
+    /// Logic here is run on the physics thread, independent of frame rate. Any physics-related updates should go here.
+    /// This is run per-frame at the start of the <see cref="Update"/> call.
+    /// Be careful of race conditions.
+    /// </summary>
+    /// <param name="gameTime"></param>
+    public virtual void PhysicsUpdate(GameTime gameTime)
+    {
+
     }
 
     private void UpdateLayout()

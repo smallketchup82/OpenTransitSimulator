@@ -13,6 +13,8 @@
 // If not, see <https://www.gnu.org/licenses/>.
 
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using OpenTransit.Engine.Dependencies;
 
 namespace OpenTransit.Engine.Graphics.Containers;
 
@@ -26,10 +28,21 @@ public abstract class CompositeDrawable : Drawable
 
     protected IReadOnlyList<Drawable> InternalChildren => _internalChildren;
 
+    public override void Load(DependencyContainer dependencies)
+    {
+        base.Load(dependencies);
+
+        foreach (var internalChild in _internalChildren)
+            internalChild.Load(Dependencies);
+    }
+
     protected void AddInternal(Drawable child)
     {
         child.Parent = this;
         _internalChildren.Add(child);
+
+        if (IsLoaded)
+             child.Load(Dependencies);
     }
 
     protected bool RemoveInternal(Drawable child)
@@ -49,6 +62,10 @@ public abstract class CompositeDrawable : Drawable
         _internalChildren.Clear();
     }
 
+    /// <summary>
+    /// Updates the drawable and its children.
+    /// </summary>
+    /// <param name="gameTime"></param>
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
@@ -57,7 +74,7 @@ public abstract class CompositeDrawable : Drawable
             internalChild.Update(gameTime);
     }
 
-    public override void Draw(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
+    public override void Draw(SpriteBatch spriteBatch)
     {
         base.Draw(spriteBatch);
 
