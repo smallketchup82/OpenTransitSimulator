@@ -4,7 +4,7 @@
 
 Open Transit Simulator is our take on a public transit simulator. It is meant to be a near-realistic simulation of transportation systems. Utilizing a complex math-driven AI that constantly optimizes itself on the fly, processing a dozen different metrics in real-time to provide the best-case micro-management of an entire transit line. This simulator hopes to allow users to visualize & evaluate the efficiency of different configurations, routes, and transportation methods, across multiple lines spanning an entire network.
 
-[_Show, not tell._](MISSION.md)
+[_Show, not tell._](https://github.com/smallketchup82/OpenTransitSimulator/wiki/Mission)
 
 ## Features
 This lists the main features planned for the project:
