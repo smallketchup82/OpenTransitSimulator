@@ -32,15 +32,15 @@ Between serving as a proof of concept, a tool for shifting public perception, a 
 ## Doesn't stuff like this already exist?
 There are indeed existing simulation games for transportation networks, with [3D-Public-Transport-Simulator](https://github.com/alen-smajic/3D-Public-Transport-Simulator) being a close peer. However, this project distinguishes itself in key ways.
 
-Most existing simulators focus on city-building mechanics or general logistics rather than specific transit optimization. They often compromise on physics, AI complexity, and realism to provide a broader entertainment experience. In contrast, this project is fully focused on public transit systems. We are creating a realistic simulation that captures the nuances and complexities of real-world networks. Despite using 2D graphics for simplicity, we aim to push the boundaries of simulation accuracy.
+Most existing simulators focus on city-building mechanics or general logistics rather than specifically transit optimization. They often compromise on physics, AI complexity, and realism to provide a broader entertainment experience. In contrast, this project is fully focused on public transit systems. We are creating a realistic simulation that captures the nuances and complexities of real-world networks. Despite using 2D graphics for simplicity, we aim to push the boundaries of simulation accuracy.
 
-Furthermore, many city builders, like *Cities: Skylines 2*, are commercial products. Even detailed simulators like [Subway Builder](https://www.subwaybuilder.com) are often paid and closed-source. These titles are less suitable for researchers or planners who need to inspect the code or modify the simulation for serious analysis.
+Furthermore, many city builders, like *Cities: Skylines 2*, are commercial products. Even detailed simulators like [Subway Builder](https://www.subwaybuilder.com) are often paid and closed-source. These titles are less suitable for researchers or planners who need to modify and/or inspect the code to meet their requirements.
 
 By creating a free and open-source project, we democratize access. Transit planners, researchers, and enthusiasts can experiment with designs without licensing fees or restrictions, hopefully fostering innovation in the field.
 
 ## Conclusion
 We are building a transit simulator that entertains, educates, and inspires. By leveraging AI and advanced simulation techniques, we hope to demonstrate that public transit *can* be excellent, and encourage new thinking in transit planning. We want to send a message to authorities that investing in public transit is not just a social responsibility, but a smart economic decision that yields returns in efficiency, sustainability, and quality of life—even in the suburbs.
 
-Cities like Tokyo, Seoul, and various European capitals have shown that with the right planning and political will, public transit works exceptionally well. We want to prove this point mathematically and provide the tools to optimize these systems further.
+Cities like Tokyo, Seoul, and various European capitals have shown that with the right planning and political will, public transit works. We want to prove *why* they're good mathetically, and we want to provide the tools to optimize these systems further.
 
 Thank you for your interest in this project. I hope you find it as exciting as I do. If you want to contribute to the project, please check out [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to get started!
