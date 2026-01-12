@@ -1,7 +1,10 @@
 # Open Transit Simulator
-Open Transit Simulator is my take on a public transit simulator. It is meant to be a near-realistic simulation of transportation systems. Utilizing a complex AI that constantly optimizes itself on the fly, processing a dozen different metrics in real-time to provide the best-case micro-management of an entire transit line, this simulator hopes to allow users to evaluate the efficiency of different configurations, routes, and transportation methods across multiple lines spanning an entire network.
+> [!NOTE]
+> When we refer to "AI" in this project, we do NOT mean machine learning or LLM's. The AI in this project is entirely chained logic & math.
 
-_If AI can do it better, so can we._
+Open Transit Simulator is our take on a public transit simulator. It is meant to be a near-realistic simulation of transportation systems. Utilizing a complex math-driven AI that constantly optimizes itself on the fly, processing a dozen different metrics in real-time to provide the best-case micro-management of an entire transit line. This simulator hopes to allow users to visualize & evaluate the efficiency of different configurations, routes, and transportation methods, across multiple lines spanning an entire network.
+
+[_Show, not tell._](MISSION.md)
 
 ## Features
 This lists the main features planned for the project:
@@ -77,9 +80,6 @@ The following are my estimated durations for how long it will take to implement 
 | Simulation Foundation Completion | Adding in the pieces for the simulation.<br>Roughly translates to: adding locomotives, cars, rails, stations, switches, blocks & signals                                                                                                                                                                                                                                 | 2 months | 6 months              |
 | Simulation Feature Completion    | Adding in the final pieces and making everything work. Roughly translates to:<br><br>- Making locomotives follow rails, and switching rails at switches<br>- Making carriages/cars follow locomotives<br>- Adding in physics engine (incl. collision detection)<br>- Adding in the AI (incl. pathfinding)<br>- Adding in rail yards<br>- Adding in passenger simulation | 4 months | 10 months             |
 | User Interface Completion        | Adding in a user interface, statistics, labels & details when hovering over trains, etc.                                                                                                                                                                                                                                                                                | 2 months | 12 months             |
-
-## Mission
-This project has an interesting mission behind it, with a lot of thought put into the reasoning for creating it in the first place. To read more about why this project exists, what its goals are, what it hopes to prove, and what it hopes to achieve, check out [MISSION.md](MISSION.md).
 
 ## License
 This project is licensed under the [GNU Lesser General Public License v3.0](COPYING.LESSER). In general, if you want to copy the codebase, making your own tweaks for your own personal use, while keeping your modified version closed source, that's completely fine! But if you plan on redistributing your modified version, we want your version to be open source. Feel free to contact me at ketchup@smkt.ca for any questions or concerns.
