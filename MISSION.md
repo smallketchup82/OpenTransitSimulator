@@ -8,11 +8,8 @@ I (smallketchup82) came up with the idea for this project while riding the GO Tr
 ## What do we hope to achieve?
 The mission is to "show, not tell." This refers to our goal of *showing* transit authorities what we want, rather than *explaining* what we want--an approach that typically falls on deaf ears. Meanwhile, our technical goal for this project is to show that "If AI can do it better, so can we." Therefore, this project aims to prove both: the former to the public, and the latter to ourselves.
 
-### As a proof of concept
-The primary goal is to serve as a proof of concept, demonstrating that AI and algorithms can solve many of the logistical problems faced by public transit systems today. The hypothesis is that if we (the contributors) can create an AI capable of managing a transit network more efficiently than current standards, we can apply that knowledge to the real world. We can use insights from this simulation to inform the design of actual transit systems, making them more responsive and user-friendly. We want to show executives, planners, and politicians that with the right tools, public transit can be significantly improved without necessarily increasing costs or infrastructure.
-
 ### As a statement
-Secondly, this project serves as a statement that many public transit issues are caused by self-imposed constraints--such as prioritizing cars, budget limitations, or political negligence--rather than genuine technical or logistical barriers.
+This project mainly serves as a statement that many public transit issues are caused by self-imposed constraints--such as prioritizing cars, budget limitations, or political negligence--rather than genuine technical or logistical barriers.
 
 Most of my friends drive instead of using public transit. When I ask them why, they often cite reasons like:
 - "I like the freedom of driving."
@@ -24,6 +21,9 @@ Most of my friends drive instead of using public transit. When I ask them why, t
 The majority of people, especially in North American suburbs, have never experienced a [genuinely good public transit system](https://youtu.be/aLKN_Rmb39I). They have either only experienced poorly managed networks or have never used public transit at all. This project aims to change that perception by visualizing the transit networks they are used to, but optimized to their full potential using advanced mathematical models.
 
 Why is Tokyo's transit system so much more efficient than New York's? Why is Vancouver's SkyTrain often viewed as more reliable than Toronto's TTC? This project aims to show you, visually and interactively, what is dragging down a public transit system & how it can be fixed. We want to give you the ability to hold your public transit authorities accountable, to walk into city council meetings with more than just your voice.
+
+### As a proof of concept
+The secondary goal is to serve as a proof of concept, demonstrating that AI and algorithms can solve many of the logistical problems faced by public transit systems today. The hypothesis is that if we (the contributors) can create an AI capable of managing a transit network more efficiently than current standards, we can apply that knowledge to the real world. We can use insights from this simulation to inform the design of actual transit systems, making them more responsive and user-friendly. We want to show executives, planners, and politicians that with the right tools, public transit can be significantly improved without necessarily increasing costs or infrastructure.
 
 ### As a platform for experimentation
 We aim to build a simulator accessible to everyone, from gamers to transit planners, allowing them to experiment with different designs and strategies. By providing a sandbox for exploration, we hope to inspire new approaches to public transit and contribute to the global improvement of these systems.
