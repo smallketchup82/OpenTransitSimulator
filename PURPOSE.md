@@ -21,7 +21,7 @@ Most of my friends drive instead of using public transit. When I ask them why, t
 
 The majority of people, especially in North American suburbs, have never experienced a [genuinely good public transit system](https://youtu.be/aLKN_Rmb39I). They have either only experienced poorly managed networks or have never used public transit at all. This project aims to change that perception by visualizing the transit networks they are used to, but optimized to their full potential using advanced mathematical models.
 
-Why is Tokyo's transit system so much more efficient than New York's? Why is Vancouver's SkyTrain often viewed as more reliable than Toronto's TTC? This project aims to show you, visually and interactively, what these differences are and how AI can bridge the gap.
+Why is Tokyo's transit system so much more efficient than New York's? Why is Vancouver's SkyTrain often viewed as more reliable than Toronto's TTC? This project aims to show you, visually and interactively, what is dragging down a public transit system & how it can be fixed. This project aims to give you the ability to hold your public transit authorities accountable.
 
 ### As a platform for experimentation
 We aim to build a simulator accessible to everyone, from gamers to transit planners, allowing them to experiment with different designs and strategies. By providing a sandbox for exploration, we hope to inspire new approaches to public transit and contribute to the global improvement of these systems.
